@@ -1,0 +1,41 @@
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2em;
+  padding-block: 2em;
+  border-bottom: 1px solid black;
+}
+nav .topLeftLogo {
+  font-family: "Fasthand", cursive;
+  font-size: 2.5rem;
+}
+nav .search {
+  border: 1px solid black;
+  border-radius: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+nav .searchBar {
+  border: none;
+  width: 100%;
+  padding-block: 0.65em;
+  padding-left: 0.5em;
+}
+nav .cart {
+  height: 4vh;
+}
+nav .searchBtn {
+  height: 4vh;
+  padding-left: 0.4em;
+  padding-right: 0.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=App.css.map */
