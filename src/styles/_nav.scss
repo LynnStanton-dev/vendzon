@@ -1,10 +1,14 @@
 nav {
+    * {
+        user-select: none;
+    }
+
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 2em;
-    padding-block: 2em;
+    padding-left: 2em;
+    padding-right: 3em;
     border-bottom: 1px solid black;
 
     .topLeftLogo {
@@ -13,28 +17,45 @@ nav {
     }
 
     .search {
-        border: 1px solid black;
-        border-radius: .9em;
+        width: 30%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        width: 50%;
+        height: 4.5vh;
     }
 
     .searchBar {
-        border: none;
+        border: 1px solid black;
+        border-inline: 0;
+        border-radius: 0;
         width: 100%;
-        padding-block: .65em;
-        padding-left: .5em;
-    }
-
-    .cart {
-        height: 4vh;
+        padding-left: .7em;
     }
 
     .searchBtn {
-        height: 4vh;
-        padding-left: .4em;
-        padding-right: .5em;
+        &:hover {
+            cursor: pointer;
+        }
+
+        border: 1px solid black;
+        border-radius: 0 1em 1em 0;
+        padding-block: .4em;
+        padding-left: .35em;
+        padding-right: .4em;
+    }
+
+    .cart {
+        height: 4.5vh;
+    }
+
+    button {
+        background: none;
+        border: none;
+    }
+
+    select {
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 1em 0 0 1em;
+        padding-inline: .3em;
     }
 }

@@ -1,0 +1,16 @@
+.explore {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    .slideshow {
+        width: 80vw;
+        height: 10px;
+        background: black;
+
+        div {
+            width: 80vw;
+        }
+    }
+}

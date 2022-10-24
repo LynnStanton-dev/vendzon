@@ -3,38 +3,75 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 2em;
-  padding-block: 2em;
+  padding-left: 2em;
+  padding-right: 3em;
   border-bottom: 1px solid black;
+}
+nav * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 nav .topLeftLogo {
   font-family: "Fasthand", cursive;
   font-size: 2.5rem;
 }
 nav .search {
-  border: 1px solid black;
-  border-radius: 0.9em;
+  width: 30%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 50%;
+  height: 4.5vh;
 }
 nav .searchBar {
-  border: none;
+  border: 1px solid black;
+  border-inline: 0;
+  border-radius: 0;
   width: 100%;
-  padding-block: 0.65em;
-  padding-left: 0.5em;
-}
-nav .cart {
-  height: 4vh;
+  padding-left: 0.7em;
 }
 nav .searchBtn {
-  height: 4vh;
-  padding-left: 0.4em;
-  padding-right: 0.5em;
+  border: 1px solid black;
+  border-radius: 0 1em 1em 0;
+  padding-block: 0.4em;
+  padding-left: 0.35em;
+  padding-right: 0.4em;
+}
+nav .searchBtn:hover {
+  cursor: pointer;
+}
+nav .cart {
+  height: 4.5vh;
+}
+nav button {
+  background: none;
+  border: none;
+}
+nav select {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 1em 0 0 1em;
+  padding-inline: 0.3em;
+}
+
+.explore {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.explore .slideshow {
+  width: 80vw;
+  height: 10px;
+  background: black;
+}
+.explore .slideshow div {
+  width: 80vw;
 }
 
 * {
+  text-decoration: none;
+  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
