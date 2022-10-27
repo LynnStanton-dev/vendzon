@@ -6,11 +6,9 @@
     align-items: center;
 
     .slideshow {
-        background: black;
         position: relative;
         width: 60vw;
         height: 40vh;
-        border: 1px solid black;
 
         div {
             width: 80vw;
@@ -18,6 +16,10 @@
 
         .prev,
         .next {
+            &:hover {
+                background: white;
+            }
+
             background: rgb(117, 112, 112);
             cursor: pointer;
             border: none;
@@ -32,6 +34,18 @@
 
         .next {
             right: 0;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            z-index: -1;
+
+            img {
+                width: 50%;
+            }
         }
     }
 }

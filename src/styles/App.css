@@ -56,11 +56,9 @@ nav button {
   align-items: center;
 }
 .explore .slideshow {
-  background: black;
   position: relative;
   width: 60vw;
   height: 40vh;
-  border: 1px solid black;
 }
 .explore .slideshow div {
   width: 80vw;
@@ -78,8 +76,22 @@ nav button {
   font-weight: bold;
   font-size: 1.2rem;
 }
+.explore .slideshow .prev:hover,
+.explore .slideshow .next:hover {
+  background: white;
+}
 .explore .slideshow .next {
   right: 0;
+}
+.explore .slideshow .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1;
+}
+.explore .slideshow .background img {
+  width: 50%;
 }
 
 * {
