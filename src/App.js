@@ -9,10 +9,19 @@ function App() {
     {
       id: 0,
       title: "Harman Kardon Onyx Studio 4",
-      img: "https://unsplash.it/500/500",
+      price: 12.34,
+      img: "https://unsplash.it/1920/1080/",
       soldOut: false,
       inSlideshow: true
     },
+    {
+      id: 1,
+      title: "foo",
+      price: 56.78,
+      img: "https://unsplash.it/1920/1080",
+      soldOut: false,
+      inSlideshow: true
+    }
   ])
 
   return (
