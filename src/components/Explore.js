@@ -13,8 +13,8 @@ export default function Explore({ products }) {
     return (
         <div className="explore">
             <div className="slideshow">
-                <button className="prev">&lt;</button>
-                <button className="next">&gt;</button>
+                <button onClick={() => curr > 0 ? setCurr(curr - 1) : setCurr(slideshow.length - 1)} className="prev">&lt;</button>
+                <button onClick={() => slideshow.length - 1 === curr ? setCurr(0) : setCurr(curr + 1)} className="next">&gt;</button>
                 <div className="background">
                     <img src={slideshow[curr].img} alt={slideshow[curr].title} />
                     <div>
