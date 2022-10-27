@@ -9,10 +9,6 @@ export default function Navbar() {
                 <div className="topLeftLogo">Vendzon</div>
             </Link>
             <div className="search">
-                <select>
-                    <option value="all">All</option>
-                    <option value="phone">Phone</option>
-                </select>
                 <input className="searchBar" placeholder="What are you looking for?" />
                 <img className="searchBtn" src={Search} alt="Search" />
             </div>

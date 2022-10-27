@@ -1,16 +1,37 @@
 .explore {
-    height: 90vh;
     width: 100vw;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .slideshow {
-        width: 80vw;
-        height: 10px;
         background: black;
+        position: relative;
+        width: 60vw;
+        height: 40vh;
+        border: 1px solid black;
 
         div {
             width: 80vw;
+        }
+
+        .prev,
+        .next {
+            background: rgb(117, 112, 112);
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;
+            padding: .75em;
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .next {
+            right: 0;
         }
     }
 }

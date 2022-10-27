@@ -1,5 +1,5 @@
 nav {
-  height: 10vh;
+  height: 12.5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,52 +21,65 @@ nav .search {
   width: 30%;
   display: flex;
   justify-content: center;
-  height: 4.5vh;
+  height: 5vh;
 }
 nav .searchBar {
   border: 1px solid black;
-  border-inline: 0;
-  border-radius: 0;
+  border-right: none;
   width: 100%;
   padding-left: 0.7em;
+  border-radius: 1em 0 0 1em;
 }
 nav .searchBtn {
   border: 1px solid black;
   border-radius: 0 1em 1em 0;
-  padding-block: 0.4em;
-  padding-left: 0.35em;
-  padding-right: 0.4em;
+  padding-block: 0.6em;
+  padding-left: 0.5em;
+  padding-right: 0.6em;
 }
 nav .searchBtn:hover {
   cursor: pointer;
 }
 nav .cart {
-  height: 4.5vh;
+  height: 5vh;
 }
 nav button {
   background: none;
   border: none;
 }
-nav select {
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 1em 0 0 1em;
-  padding-inline: 0.3em;
-}
 
 .explore {
-  height: 90vh;
   width: 100vw;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .explore .slideshow {
-  width: 80vw;
-  height: 10px;
   background: black;
+  position: relative;
+  width: 60vw;
+  height: 40vh;
+  border: 1px solid black;
 }
 .explore .slideshow div {
   width: 80vw;
+}
+.explore .slideshow .prev,
+.explore .slideshow .next {
+  background: rgb(117, 112, 112);
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 0.75em;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.explore .slideshow .next {
+  right: 0;
 }
 
 * {

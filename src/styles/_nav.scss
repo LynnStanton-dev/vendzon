@@ -3,7 +3,7 @@ nav {
         user-select: none;
     }
 
-    height: 10vh;
+    height: 12.5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,15 +20,15 @@ nav {
         width: 30%;
         display: flex;
         justify-content: center;
-        height: 4.5vh;
+        height: 5vh;
     }
 
     .searchBar {
         border: 1px solid black;
-        border-inline: 0;
-        border-radius: 0;
+        border-right: none;
         width: 100%;
         padding-left: .7em;
+        border-radius: 1em 0 0 1em;
     }
 
     .searchBtn {
@@ -38,24 +38,17 @@ nav {
 
         border: 1px solid black;
         border-radius: 0 1em 1em 0;
-        padding-block: .4em;
-        padding-left: .35em;
-        padding-right: .4em;
+        padding-block: .6em;
+        padding-left: .5em;
+        padding-right: .6em;
     }
 
     .cart {
-        height: 4.5vh;
+        height: 5vh;
     }
 
     button {
         background: none;
         border: none;
-    }
-
-    select {
-        display: inline-block;
-        vertical-align: top;
-        border-radius: 1em 0 0 1em;
-        padding-inline: .3em;
     }
 }
