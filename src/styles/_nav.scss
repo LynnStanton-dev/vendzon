@@ -44,7 +44,26 @@ nav {
     }
 
     .cart {
-        height: 5vh;
+        position: relative;
+
+        img {
+            height: 5vh;
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background: rgb(177, 60, 60);
+            border-radius: 100%;
+            color: white;
+            font-weight: bold;
+            aspect-ratio: 1 / 1;
+            width: 50%;
+            left: 0;
+            top: 0;
+        }
     }
 
     button {

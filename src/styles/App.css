@@ -41,7 +41,24 @@ nav .searchBtn:hover {
   cursor: pointer;
 }
 nav .cart {
+  position: relative;
+}
+nav .cart img {
   height: 5vh;
+}
+nav .cart span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgb(177, 60, 60);
+  border-radius: 100%;
+  color: white;
+  font-weight: bold;
+  aspect-ratio: 1/1;
+  width: 50%;
+  left: 0;
+  top: 0;
 }
 nav button {
   background: none;
@@ -88,14 +105,58 @@ nav button {
   height: 100%;
   display: flex;
 }
+.explore .slideshow .background img {
+  max-width: 50%;
+}
 .explore .slideshow .background div {
+  padding: 10%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.explore .slideshow .background .slideshowTitle {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.explore .slideshow .background .slideshowPrice {
+  margin-top: 10%;
+  align-self: end;
+  width: 40%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  background: rgb(255, 102, 0);
+  padding-block: 5%;
+  color: white;
+}
+
+.product {
+  display: flex;
+  min-height: 75vh;
+}
+.product .productImages {
+  display: flex;
   align-items: center;
+  width: 50%;
+}
+.product .productImages .sideImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 2em;
+}
+.product .productImages .sideImages img {
+  width: 10%;
+}
+.product .productImages .mainImage {
+  width: 50%;
 }
 
 * {
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: black;
   margin: 0;

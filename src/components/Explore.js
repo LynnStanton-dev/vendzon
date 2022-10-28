@@ -6,9 +6,12 @@ export default function Explore({ products }) {
     const [curr, setCurr] = useState(0)
 
     useEffect(() => {
+        const tempCurr = curr
         setTimeout(() => {
-            slideshow.length - 1 === curr ? setCurr(0) : setCurr(curr + 1)
-        }, 10000)
+            if (tempCurr === curr) {
+                slideshow.length - 1 === curr ? setCurr(0) : setCurr(curr + 1)
+            }
+        }, 5000)
     }, [curr, slideshow.length])
 
     return (
@@ -19,8 +22,8 @@ export default function Explore({ products }) {
                 <Link className="background" to={"/products/" + slideshow[curr].id}>
                     <img src={slideshow[curr].img[0]} alt={slideshow[curr].title} />
                     <div>
-                        <span>{slideshow[curr].title}</span>
-                        <span>{slideshow[curr].price}</span>
+                        <span className="slideshowTitle">{slideshow[curr].title}</span>
+                        <span className="slideshowPrice">{slideshow[curr].price} €</span>
                     </div>
                 </Link>
             </div>

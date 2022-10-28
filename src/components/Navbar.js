@@ -1,8 +1,12 @@
 import Cart from "../img/cart-outline.svg"
 import Search from "../img/search-var-solid.svg"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 export default function Navbar() {
+    const [itemCount, setItemCount] = useState(0)
+
+
     return (
         <nav>
             <Link to="/">
@@ -13,7 +17,10 @@ export default function Navbar() {
                 <img className="searchBtn" src={Search} alt="Search" />
             </div>
             <Link to="/cart">
-                <img className="cart" src={Cart} alt="Cart" />
+                <div className="cart">
+                    <img src={Cart} alt="Cart" />
+                    {Boolean(itemCount) && <span>{itemCount}</span>}
+                </div>
             </Link>
         </nav>
     )
