@@ -23,7 +23,7 @@
             position: absolute;
             top: 50%;
             margin-top: -22px;
-            padding: .75em;
+            padding: 1.7%;
             color: white;
             font-weight: bold;
             font-size: 1.2rem;
@@ -50,6 +50,8 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
+                padding-right: 10%;
             }
 
             .slideshowTitle {
@@ -59,7 +61,7 @@
 
             .slideshowPrice {
                 margin-top: 10%;
-                align-self: end;
+                margin-left: 20%;
                 width: 40%;
                 text-align: center;
                 font-weight: 600;

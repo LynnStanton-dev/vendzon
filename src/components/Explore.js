@@ -6,11 +6,8 @@ export default function Explore({ products }) {
     const [curr, setCurr] = useState(0)
 
     useEffect(() => {
-        const tempCurr = curr
         setTimeout(() => {
-            if (tempCurr === curr) {
-                slideshow.length - 1 === curr ? setCurr(0) : setCurr(curr + 1)
-            }
+            slideshow.length - 1 === curr ? setCurr(0) : setCurr(curr + 1)
         }, 5000)
     }, [curr, slideshow.length])
 
